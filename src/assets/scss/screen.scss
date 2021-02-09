@@ -1,0 +1,30 @@
+/* ===== == = === 37.5em (600px) === = == ===== */
+$tablet-width-min: 37.5em;
+/* ===== == = === 69.5em (1112px) === = == ===== */
+$desktop-width-min: 69.5em;
+/* ===== == = === 90em (2040px) === = == ===== */
+$desktop-width-max: 100em;
+
+@mixin mobile {
+  @media (max-width: #{$tablet-width-min}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$desktop-width-min}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width-min}) {
+    @content;
+  }
+}
+
+:export {
+  mobile: $tablet-width-min;
+  tablet: $desktop-width-min;
+  desktop: $desktop-width-max;
+}

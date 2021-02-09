@@ -1,0 +1,21 @@
+$white: #ffffff;
+$grey1: hsl(0, 0%, 68%);
+$grey: #333333;
+$blue: #0000ff;
+$red: #FF0000;
+$gray: #888;
+$blue1: #149ddd;
+$lightblack: #212431;
+
+
+
+:export {
+  white: $white;
+  grey: $grey;
+  grey1: $grey1;
+  blue: $blue;
+  gray: $gray;
+  red: $red;
+  blue1: $blue1;
+  lightblack: $lightblack;
+}
